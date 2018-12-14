@@ -1,0 +1,80 @@
+p {
+color:blue;
+font-size: 10px;
+}
+
+.listitem {
+color:purple;
+font-size:15px;
+}
+
+.paragraph {
+color:blue;
+font-size:15px;
+}
+
+#background {
+background-color:#000066;
+} 
+/*nav hover code*/
+.navitem { 
+list-style-type:none;
+display:inline;
+padding-right:0.5em;
+}
+
+
+#navmenu {
+width:40px;
+height:40px;
+margin:auto;
+color:blue;
+}
+#header {
+text-align:center;
+background-color:black;
+font-size:2.5em;
+text-decoration:bold;
+color:white;
+border-radius:10px;
+margin-left:-16px;
+margin-right:-16px;
+margin-bottom:15px;
+} 
+
+
+a:link{
+	color:blue;
+	list-style-type:none;
+}
+
+a:visited{
+	color:blue;
+	list-style-type:none;
+}
+
+a:hover{
+   color:yellow;
+   list-style-type:none; 
+}
+
+a:active{
+	color:yellow;
+	list-style-type:none;
+}
+
+#rightside{
+	float: right;
+	width: 50%;
+} 
+#leftside{
+	width: 50%;
+} 
+#image{
+width:50%;
+height:50%;
+}
+
+#ptags{
+font-size:2.5em;	
+}
