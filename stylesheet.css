@@ -1,0 +1,71 @@
+#logo {
+height:100px;
+} 
+
+#menu {
+border:3px solid black;
+margin-top:10px;
+}
+
+#comments {
+border:5px solid brown;
+margin-top:5px;
+height:900px;
+width:100%;
+}
+
+#form {
+border:3px solid blue;
+height:700px;
+float:right;
+margin:10px;
+}
+
+#menu {
+margin:10px;
+}
+
+body {
+background:radial-gradient(100% 100% at 10% 30%,#66ff66,
+ 	  #61f26e,
+ 	  #5ce675,
+ 	  #57d97d,
+ 	  #52cc85,
+ 	  #4cbf8c,
+ 	  #47b294,
+ 	  #42a69c,
+ 	  #3d99a3,
+ 	  #388cab,
+ 	  #3380b2,
+ 	  #2e73ba,
+ 	  #2966c2,
+ 	  #2459c9,
+ 	  #1f4dd1,
+ 	  #1a40d9,
+ 	  #1433e0,
+ 	  #0f26e8,
+ 	  #0a19f0,
+ 	  #050df7,
+  #0000ff);
+}
+
+#header {
+text-align:center;
+background-color:black;
+font-size:2.5em;
+text-decoration:bold;
+color:white;
+border-radius:10px;
+margin-left:-16px;
+margin-right:-16px;
+margin-bottom:15px;
+}
+
+#image {
+width:50%;
+height:50%;
+} 
+
+#ptags{
+font-size:2.5em;	
+}
