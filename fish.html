@@ -1,0 +1,65 @@
+<html>
+<head>
+<title> Fish Game! </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open("target", 800, 500);
+var background = new sjs.Image("Images/space5.png");
+background.setSize(sjs.getWidth(), sjs.getHeight());
+//player properties below here
+
+var player2 = new sjs.Image("Images/titan_right.png");
+player2.type = "player2";
+
+sjs.keyDown(RIGHT_KEY, function(){
+player.setImage("Images/titan_right.png");
+player.pushRight();
+});
+
+sjs.keyDown(LEFT_KEY, function(){
+player.setImage("Images/titan_left.png");
+player.pushLeft();
+});
+
+sjs.keyDown(UP_KEY, function(){
+player.pushUp();
+});
+
+sjs.keyDown(DOWN_KEY, function(){
+player.pushDown();
+});
+middle();
+} //end start
+middle(){
+
+var player = new sjs.Image("Images/medfighter_right.png");
+player.type = "player";
+
+sjs.keyDown(D_KEY, function(){
+player.setImage("Images/medfighter_right.png");
+player.pushRight();
+});
+
+sjs.keyDown(A_KEY, function(){
+player.setImage("Images/medfighter_left.png");
+player.pushLeft();
+});
+
+sjs.keyDown(W_KEY, function(){
+player.pushUp();
+});
+
+sjs.keyDown(S_KEY, function(){
+player.pushDown();
+});
+
+}
+</script>
+</head>
+<body onload="start()">
+<h1> Fish Game! </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
