@@ -1,0 +1,114 @@
+<html>
+<head>
+<div class="container">
+
+<div class="row">
+<div class="col-sm-4">
+<img id="logo" class="img-responsive" src="THE coder logo.png" />
+</div>
+</div> <!-- end logo row -->
+
+<div class="row">
+<div class="col-sm-12" id="menu">
+<nav class="navbar navbar-expand bg-info navbar-light">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a href="games.html">Games</a>
+</li>
+<li class="nav-item">
+<a href="funstuff.html">Fun Stuff</a>
+</li>
+<li class="nav-item">
+<a href="info.html">Info</a>
+</li>
+</ul>
+</nav>
+</div>
+</div> <!-- end menu row -->
+
+</div> <!-- end container div -->
+	<div id="form" class="col-sm-12 col-md-5">
+<header id="header"> Leave a Comment</header>
+<form class="form-inline">
+<label>Name: </label>
+<input type="text" class="form-control" id="name" placeholder="Enter Name">
+<label>Color:</label> 
+<select class="form-control">
+	<option>Choose a Color</option>
+	<option>Blue</option>
+	<option>Green</option>
+	<option>Yellow</option>
+	<option>Orange</option>
+	<option>Red</option>
+	<option>Purple</option>
+</select>
+</form>
+<form>
+<label>Title:</label>
+<input type="text" class="form-control" id="name" placeholder="Enter Name">
+<label>Background Color:</label>
+<select class="form-control">
+<option>Choose a Background Color </option>
+<option>Red</option>
+<option>Purple</option>
+<option>Blue</option>
+<option>Green</option>
+<option>Yellow</option>
+<option>Orange</option>
+<option>Black</option>
+<option>Gray</option>
+<option>White</option>
+<option>Pink</option>
+</select>
+</form>
+<form class="form-inline">
+<label> Icons: </label>
+<input type="radio" name="icon">
+<img src="stock_volume2.png" class="icon" />
+<input type="radio" name="icon">
+<img src="shuffle.png" class="icon" />
+<input type="radio" name="icon">
+<img src="zoom_in.png" class="icon" />
+<input type="radio" name="icon">
+<img src="bluetooth.png" class="icon" />
+</form>
+<label>Comment: </label> <br>
+<textarea id="textarea" class="form-control" rows="8"></textarea> <br>
+<input onclick="validate()" class="btn btn-primary" type="button" value="Submit Comment">
+</div>
+<script>
+function validate(){
+//VARIABLES
+var name = document.querySelector("#name");
+var title = document.querySelector("#title");
+var textarea = document.querySelector("#textarea");
+var blank_feild = true;
+if (name.value == "") {
+	name.style.border = "2px solid red"
+	blank_field = true;
+} else {
+name.style.border = "2px solid green";
+blank_field = false;
+}
+
+if (title.value == "") {
+ title.style.border = "2px solid red";
+ blank_field = true;
+} else {
+	title.style.border = "2px solid green";
+	blank_field = false;
+}
+
+if (textarea.value == "") {
+textarea.style.border = "2px solid red";
+blank_field = true;
+} else {
+	textarea.style.border = "2px solid green";
+	blank_field = false;
+}
+}//end function validate
+</script>
+</head>
+<body>
+</body>
+</html>
